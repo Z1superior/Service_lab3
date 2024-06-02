@@ -1,0 +1,12 @@
+server:
+  port: 18000
+eureka:
+  instance:
+    hostname: "eurekaServer18000"
+  client:
+    register-with-eureka: false
+    fetch-registry: false  #表面自己是注册中心
+    service-url:
+      defaultZone: "http://eurekaServer18001:18001/eureka/"
+  server:
+    enable-replicated-request-compression: false
